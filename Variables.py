@@ -25,7 +25,7 @@ class MyClass:
         return self.__private_var
 
 obj = MyClass()
-# Accessing private variable using name mangling
+# Accessing private variable using name mangling: object._ClassName__variable
 print(obj._MyClass__private_var)  # ✓ Access using name mangling
 
 #Private method

@@ -35,6 +35,7 @@ def greet(name):
 print(greet.__doc__) #we can also use help(greet) to get the docstring of the function
 
 #zen of python: 'import this' in terminal
+#shebang: #!/usr/bin/env python3
 
 #python interactive mode & ipython interactive mode
 
