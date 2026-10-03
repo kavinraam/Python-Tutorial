@@ -302,3 +302,95 @@ Conversion to string
 3.3
 """
 
+#Type casting
+#Python Type Casting is a process in which we convert a literal of one data type to another data type. Python supports two types of casting − implicit and explicit
+
+#Implicit Casting: When any language compiler/interpreter automatically converts object of one type into other, it is called automatic or implicit casting
+a = 10      # int
+b = 10.5    # float
+
+c = a + b   # 10 is automatically converted to 10.0
+print(c)    # 20.5
+
+print(type(c))  # <class 'float'>
+
+#Explicit Casting: When we convert object of one type into other by using a constructor function, it is called explicit casting
+#int() - converts to integer
+# Float to Int
+a = int(10.5)
+print(a)  # 10 (fractional part removed)
+
+# String to Int
+b = int("100")
+print(b)  # 100
+
+# Boolean to Int
+c = int(True)
+print(c)  # 1
+
+# Error case
+d = int("10.5")  # ❌ ValueError!
+e = int("Hello")  # ❌ ValueError!
+
+
+#float() - converts to float
+# Int to Float
+a = float(10)
+print(a)  # 10.0
+
+# String to Float
+b = float("10.5")
+print(b)  # 10.5
+
+# Scientific notation
+c = float("1.00E4")
+print(c)  # 10000.0
+
+# Error case
+d = float("1,234.50")  # ❌ ValueError (comma not allowed)
+
+
+#str() - converts to string
+# Int to String
+a = str(10)
+print(a)  # '10'
+
+# Float to String
+b = str(10.5)
+print(b)  # '10.5'
+
+# List to String
+c = str([1, 2, 3])
+print(c)  # '[1, 2, 3]'
+
+# Tuple to String
+d = str((1, 2, 3))
+print(d)  # '(1, 2, 3)'
+
+
+#sequence type conversion
+#String ↔ List ↔ Tuple
+# String to List (separates each character)
+s = "Hello"
+lst = list(s)
+print(lst)  # ['H', 'e', 'l', 'l', 'o']
+
+# List to Tuple
+lst = [1, 2, 3]
+tup = tuple(lst)
+print(tup)  # (1, 2, 3)
+
+# Tuple to List
+tup = (1, 2, 3)
+lst = list(tup)
+print(lst)  # [1, 2, 3]
+
+# String to Tuple
+s = "Hello"
+tup = tuple(s)
+print(tup)  # ('H', 'e', 'l', 'l', 'o')
+
+# List/Tuple to String (converts entire object to string)
+lst = [1, 2, 3]
+s = str(lst)
+print(s)  # '[1, 2, 3]'
