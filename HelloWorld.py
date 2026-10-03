@@ -3,13 +3,14 @@ print(sys.version)
 
 print("Hello, World!")
 
-#single line comment
+#Comments
+#Single line comment
 """
 This is a multi-line comment"""
 '''
 This is also a multi-line comment'''
 
-#multi-line statement
+#Multi-line statement
 item_one = 1
 item_two = 2
 item_three = 3
@@ -17,18 +18,32 @@ total = item_one + \
         item_two + \
         item_three
 
-#single line statement
+#Single line statement
 import sys; x = 'Hello, World!'; sys.stdout.write(x + '\n')
 
-#zen of python
+#Docstring
+def greet(name):
+    """
+    This function greets the person whose name is passed as a parameter.
+
+    Parameters:
+    name (str): The name of the person to greet
+
+    Returns:
+    None
+    """
+print(greet.__doc__) #we can also use help(greet) to get the docstring of the function
+
+#zen of python: 'import this' in terminal
 
 #python interactive mode & ipython interactive mode
 
 #python: source code -> Interpreter (translator:bytecode + vm:machinecode) -> output
 
 #python environment variables: PYTHONPATH, PYTHONSTARTUP, PYTHONCASEOK
-#python command line options: -c, -m, -i, -O, -B, -s, -S, -E, -v, -V, -h
+#python command line options: -c, -m, -i, -O, -B, -s, -S, -E, -v, -V, -h ('python -h' in terminal says all options)
 
+#Print()
 print("Good day!")
 print("Good" + "day!")
 print("I'm",18)

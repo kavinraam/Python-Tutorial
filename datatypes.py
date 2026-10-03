@@ -7,6 +7,8 @@ var2 = True    # bool data type
 var3 = 10.023  # float data type
 var4 = 10+3j   # complex data type
 
+#Inf - Infinity, -Inf - Negative Infinity, NaN - Not a Number
+
 # integer variable.
 a=100
 print("The type of variable having value", a, " is ", type(a))
